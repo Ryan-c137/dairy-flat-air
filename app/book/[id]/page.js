@@ -136,7 +136,7 @@ export default function BookPage() {
         </div>
         <div className="border rounded-lg p-4 bg-gray-50 flex justify-between">
           <span className="text-gray-600">Price</span>
-          <span className="font-bold">${flight.price}</span>
+          <span className="font-bold text-black">${flight.price}</span>
         </div>
         <button
           type="submit"

@@ -54,7 +54,7 @@ function ResultsContent() {
             <div key={flight._id} className={`bg-white border rounded-2xl p-6 flex justify-between items-center ${full ? 'opacity-60' : ''}`}>
               <div>
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="font-bold">{flight.flightNumber}</span>
+                  <span className="font-bold text-black">{flight.flightNumber}</span>
                   <span className="text-xs bg-gray-100 text-gray-500 px-2 py-0.5 rounded-full">{flight.aircraft}</span>
                 </div>
                 <p className="text-sm text-gray-500">
@@ -68,7 +68,7 @@ function ResultsContent() {
               </div>
 
               <div className="text-right">
-                <p className="text-2xl font-bold">${flight.price}</p>
+                <p className="text-2xl font-bold text-black">${flight.price}</p>
                 <button
                   disabled={full}
                   onClick={() => router.push(`/book/${flight._id}`)}
